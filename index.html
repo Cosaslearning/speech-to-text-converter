@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-To-Text | Cosas Learning</title>
+    <!-- Importing the CSS file -->
+    <link rel="stylesheet" href="style.css">     
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"><img src="logo.png" alt="Logo"></div>
+      <div class="heding"><h1>Speech-To-Text Converter</h1></div>
+    </header>
+    <div class="hero_section">
+      <!-- Speech-To-Text -->
+      <div class="Speech_to_text">
+        <!-- Languages Option -->
+        <div class="row_box">
+          <label>Select Language</label>
+          <div class="select_box">
+            <select name="input-language" id="language"></select>
+          </div>
+        </div>
+        <!-- Convert Button -->
+        <button id="convert_speech">Start Converting</button>
+        <!-- Textarea -->
+        <div class="row_box">
+          <label>Result</label>
+          <textarea spellcheck="false" placeholder="Text will be shown here" disabled></textarea>
+        </div>
+        <!-- Buttons -->
+        <div class="btnBox">
+          <button id="copyBtn" class="hide">Copy Text</button>
+          <button id="downloadBtn" class="hide">Download</button>
+        </div>
+        <button id="clearBtn" class="hide">Clear Text</button>
+      </div>
+    </div>
+  </div>
+  <!-- Importing Languages Option file-->
+  <script src="languages-option.js"></script>
+  <!-- Importing the JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
